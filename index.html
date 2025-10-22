@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linh Tong - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Linh Tong</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Linh Tong</h1>
+            <p>Full-Stack Software Engineer</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I’m Linh Tong, a senior at Colby College studying Computer Science. I’m passionate about creating digital experiences that are both beautiful and impactful. As a product-minded engineer with full-stack experience, I love thinking beyond code - understanding user needs, exploring why something should be built, and ensuring it fits into a larger vision.</p>
+                    <br>
+                    <p>When I'm not working, you can find me making music, learning Mandarin Chinese, or emotionally recovering from a Manchester United game.</p>
+                    <br>
+                </div>
+                <img class="about-image" src="images/profile.jpg" alt="My profile picture" >
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Software Engineer Intern</h3>
+                        <p class="experience-company">
+                            <a href="https://www.rippling.com/">Rippling</a>
+                        </p>
+                    </div>
+                    <div>
+                        <div class="experience-date">May 2025 - August 2025</div>
+                        <div class="experience-location">New York, NY</div>
+                    </div>
+                </div>
+                <p class="experience-description">
+                    <ul>
+                        <li>Implemented 4 new tabs using React and TypeScript to visualize group membership status and data sync history for third-party integrations</li>
+                        <li>Developed 5 Django API endpoints and 2 MongoDB collections to update membership, resolve group discrepancies between Rippling and third-party integration, and track data sync events</li>
+                        <li>Created 5 Datadog dashboards to monitor new API endpoints' performances</li>
+                        <li>Troubleshot and refactored the existing data sync flow, removing 1,000+ stale group discrepancy records</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Software Engineer Intern</h3>
+                        <p class="experience-company">
+                            <a href="https://www.mutualofomaha.com/">Mutual of Omaha</a>
+                        </p>
+                    </div>
+                    <div>
+                        <div class="experience-date">May 2024 - August 2024</div>
+                        <div class="experience-location">Omaha, NE</div>
+                    </div>
+                </div>
+                <p class="experience-description">
+                    <ul>
+                        <li>Designed and developed a data pipeline to replicate files from a SFTP server to Snowflake using AWS Lambda, S3, Python, and SQL, processing 300,000+ records daily</li>
+                        <li>Deployed the pipeline using AWS CDK for automated and scalable workflow orchestration</li>
+                        <li>Optimized an AWS Glue job that backs an on-premise table using Spark and SQL, reducing monthly costs by 8%</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="experience-item fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Software Engineer Intern</h3>
+                        <p class="experience-company">
+                            <a href="https://coderpush.com/">CoderPush</a>
+                        </p>
+                    </div>
+                    <div>
+                        <div class="experience-date">May 2023 - August 2023</div>
+                        <div class="experience-location">Hanoi, Vietnam</div>
+                    </div>
+                </div>
+                <p class="experience-description">
+                    <ul>
+                        <li>Developed 15 front-end features for an art platform using TypeScript, Next.js, and Tailwind CSS, optimizing shopping experience for 4,000 users</li>
+                        <li>Engineered 3 API endpoints using Node.js and PostgreSQL for referral code, keyword tag, and password change</li>
+                        <li>Built 3 features for an AI chatbot using Python, OpenAI API, and Streamlit, enabling interface customization for 80 internal users</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Let's Connect</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="contact-info">
+                    <a href="mailto:linhtong2026@gmail.com" class="contact-link">Email</a>
+                    <a href="https://www.linkedin.com/in/linhtong2026/" class="contact-link">LinkedIn</a>
+                    <a href="https://github.com/linhtong2026" class="contact-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Linh Tong</p>
+        </div>
+    </footer>
+</body>
+</html>
