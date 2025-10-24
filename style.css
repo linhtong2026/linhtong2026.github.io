@@ -542,3 +542,53 @@ body.dark-mode .project-link,
 body.dark-mode .tech-tag {
     color: var(--accent);
 }
+
+/* === Spotify Popup === */
+.spotify-popup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--white);
+  color: var(--text);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.spotify-popup.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.spotify-popup img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.spotify-info h4 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.spotify-info p {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+/* Dark Mode Support */
+body.dark-mode .spotify-popup {
+  background: #2b2b2b;
+  color: #fff;
+}
